@@ -38,7 +38,7 @@ public class SearchWeather extends AppCompatActivity {
     private ListView listView;
 
     //请求的API，详细参考https://lbs.amap.com/api/webservice/guide/api/weatherinfo/
-    private String url = "https://restapi.amap.com/v3/weather/weatherInfo?key=你在高德控制台申请的Web服务的key&extensions=all&out=json";
+    private String url = "https://restapi.amap.com/v3/weather/weatherInfo?key=6d29a580912e6f4b7ffb3b057d1f9ab2&extensions=all&out=json";
     //使用OkHttpClient进行网络请求
     private OkHttpClient httpClient = new OkHttpClient();
     //使用Gson解析json字符串
@@ -104,7 +104,7 @@ public class SearchWeather extends AppCompatActivity {
      */
     private void getAdcode() {
         String address = edit_city.getText().toString();
-        String url = "https://restapi.amap.com/v3/geocode/geo?key=你在高德控制台申请的Web服务的key&address=" + address;
+        String url = "https://restapi.amap.com/v3/geocode/geo?key=6d29a580912e6f4b7ffb3b057d1f9ab2&address=" + address;
 
         final Request request = new Request.Builder().url(url).get().build();
         new Thread(new Runnable() {

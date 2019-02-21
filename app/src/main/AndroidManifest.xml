@@ -36,7 +36,7 @@
         <!--设置apikey-->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="你在高德控制台申请的apikey" />
+            android:value="e0c491ee781b74ccb012f1d6c3d4785e" />
 
         <activity android:name=".activity.ShowWeather" />
         <activity android:name=".activity.SearchWeather" />
